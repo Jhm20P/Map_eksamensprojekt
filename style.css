@@ -1,0 +1,631 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+}
+
+#map {
+  background-image: url("Selde_Kort.png");
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  z-index: -10;
+}
+
+
+/* PRESETS FOR PUNKT 1 OG TOOLTIP 1 */
+.punkt1 {
+  background-color: #d83087;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+
+#tooltip1 {
+  background-color: rgba(262,69,69,0.9);
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  z-index: 5;
+}
+
+/* PRESETS FOR PUNKT 2 OG TOOLTIP 2 */
+.punkt2 {
+  background-color: #d83087;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+
+#tooltip2 {
+  background-color: rgba(262,69,69,0.9);
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  z-index: 5;
+}
+
+
+/* PRESETS FOR PUNKT 3 OG TOOLTIP 3 */
+.punkt3 {
+  background-color: #d83087;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+
+#tooltip3 {
+  background-color: rgba(262,69,69,0.9);
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  z-index: 5;
+}
+
+/* PRESETS FOR PUNKT 4 OG TOOLTIP 4 */
+
+.punkt4 {
+  background-color: #d83087;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+#tooltip4 {
+  background-color: rgba(262,69,69,0.9);
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  z-index: 5;
+}
+
+/* PRESETS FOR PUNKT 5 OG TOOLTIP 5 */
+.punkt5 {
+  background-color: #d83087;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+#tooltip5 {
+  background-color: rgba(262,69,69,0.9);
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  z-index: 5;
+}
+
+/* PRESETS FOR PUNKT 6 OG TOOLTIP 6 */
+.punkt6 {
+  background-color: #d83087;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+
+#tooltip6 {
+  background-color: rgba(262,69,69,0.9);
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  z-index: 5;
+}
+
+/* PRESETS FOR PUNKT 7 OG TOOLTIP 7 */
+.punkt7 {
+  background-color: #d83087;
+  position: absolute;
+  cursor: pointer;
+  z-index: 8;
+}
+
+#tooltip7 {
+  background-color: rgba(262,69,69,0.9);
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  z-index: 5;
+}
+
+.vis-ikke {
+  display: none;
+}
+
+#tooltip1 h4 {
+  text-align: center;
+}
+
+#tooltip2 h4 {
+  text-align: center;
+}
+
+#tooltip3 h4 {
+  text-align: center;
+}
+
+#tooltip4 h4 {
+  text-align: center;
+}
+
+#tooltip5 h4 {
+  text-align: center;
+}
+
+#tooltip6 h4 {
+  text-align: center;
+}
+
+#tooltip7 h4 {
+  text-align: center;
+}
+
+
+
+/* RESPONSIV DESIGN FOR DESKTOP/LAPTOP */
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+
+  #map {
+    width: 1500px ;
+    height: 600px;
+  }
+
+  .billede-af-værket {
+    width: 85%;
+    height: 85%;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+
+/* PUNKT 1 OG TOOLTIP 1 */
+  .punkt1 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 262px;
+    left: 1338px;
+  }
+
+  #tooltip1 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    left: 1115px;
+    top: 257px;
+
+  }
+
+  /* PUNKT 2 OG TOOLTIP 2 */
+  .punkt2 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 248px;
+    left: 1423px;
+
+  }
+
+  #tooltip2 {
+    width: 200px;
+    height: 350px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 243px;
+    left: 1450px;
+  }
+
+  /* PUNKT 3 OG TOOLTIP 3 */
+  .punkt3 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 22px;
+    top: 118px;
+    left: 1153px;
+  }
+
+  #tooltip3 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 117px;
+    left: 900px;
+  }
+
+
+/* PUNKT 4 OG TOOLTIP 4 */
+  .punkt4 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 532px;
+    left: 440px;
+  }
+
+  #tooltip4 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 450px;
+    left: 470px;
+  }
+
+/* PUNKT 5 OG TOOLTIP 5 */
+  .punkt5 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 483px;
+    left: 270px;
+  }
+
+  #tooltip5 {
+    width: 200px;
+    height: 340px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 120px;
+    left: 245px;
+  }
+
+  /* PUNKT 6 OG TOOLTIP 6 */
+  .punkt6 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 540px;
+    left: 268px;
+  }
+
+  #tooltip6 {
+    width: 200px;
+    height: 290px;
+    border-radius: 25px;
+    border-width: 1px;
+    left: 300px;
+    top: 220px;
+  }
+
+/* PUNKT 7 OG TOOLTIP 7 */
+  .punkt7 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 307px;
+    left: 1419px;
+  }
+
+  #tooltip7 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 320px;
+    left: 1182px;
+  }
+
+}
+
+/* RESPONSIV DESIGN FOR TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  #map {
+    width: 1500px ;
+    height: 600px;
+  }
+
+  .billede-af-værket {
+    width: 85%;
+    height: 85%;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+
+/* PUNKT 1 OG TOOLTIP 1 */
+  .punkt1 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 262px;
+    left: 1129px;
+  }
+
+  #tooltip1 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    left: 915px;
+    top: 257px;
+
+  }
+
+  /* PUNKT 2 OG TOOLTIP 2 */
+  .punkt2 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 248px;
+    left: 1214px;
+
+  }
+
+  #tooltip2 {
+    width: 200px;
+    height: 350px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 243px;
+    left: 1250px;
+  }
+
+  /* PUNKT 3 OG TOOLTIP 3 */
+  .punkt3 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 22px;
+    top: 118px;
+    left: 944px;
+  }
+
+  #tooltip3 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 117px;
+    left: 700px;
+  }
+
+
+/* PUNKT 4 OG TOOLTIP 4 */
+  .punkt4 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 532px;
+    left: 230px;
+  }
+
+  #tooltip4 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 450px;
+    left: 260px;
+  }
+
+/* PUNKT 5 OG TOOLTIP 5 */
+  .punkt5 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 483px;
+    left: 60px;
+  }
+
+  #tooltip5 {
+    width: 200px;
+    height: 340px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 120px;
+    left: 45px;
+  }
+
+  /* PUNKT 6 OG TOOLTIP 6 */
+  .punkt6 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 540px;
+    left: 58px;
+  }
+
+  #tooltip6 {
+    width: 200px;
+    height: 290px;
+    border-radius: 25px;
+    border-width: 1px;
+    left: 100px;
+    top: 220px;
+  }
+
+/* PUNKT 7 OG TOOLTIP 7 */
+  .punkt7 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 307px;
+    left: 1209px;
+  }
+
+  #tooltip7 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 320px;
+    left: 982px;
+  }
+
+}
+
+/* RESPONSIV DESIGN FOR TABLET */
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+
+  #map {
+    width: 1500px ;
+    height: 600px;
+  }
+
+  .billede-af-værket {
+    width: 85%;
+    height: 85%;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+
+/* PUNKT 1 OG TOOLTIP 1 */
+  .punkt1 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 262px;
+    left: 1129px;
+  }
+
+  #tooltip1 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    left: 915px;
+    top: 257px;
+
+  }
+
+  /* PUNKT 2 OG TOOLTIP 2 */
+  .punkt2 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 248px;
+    left: 1214px;
+
+  }
+
+  #tooltip2 {
+    width: 200px;
+    height: 350px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 243px;
+    left: 1250px;
+  }
+
+  /* PUNKT 3 OG TOOLTIP 3 */
+  .punkt3 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 22px;
+    top: 118px;
+    left: 944px;
+  }
+
+  #tooltip3 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 117px;
+    left: 700px;
+  }
+
+
+/* PUNKT 4 OG TOOLTIP 4 */
+  .punkt4 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 532px;
+    left: 230px;
+  }
+
+  #tooltip4 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 450px;
+    left: 260px;
+  }
+
+/* PUNKT 5 OG TOOLTIP 5 */
+  .punkt5 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 483px;
+    left: 60px;
+  }
+
+  #tooltip5 {
+    width: 200px;
+    height: 340px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 120px;
+    left: 45px;
+  }
+
+  /* PUNKT 6 OG TOOLTIP 6 */
+  .punkt6 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 12px;
+    top: 540px;
+    left: 58px;
+  }
+
+  #tooltip6 {
+    width: 200px;
+    height: 290px;
+    border-radius: 25px;
+    border-width: 1px;
+    left: 100px;
+    top: 220px;
+  }
+
+/* PUNKT 7 OG TOOLTIP 7 */
+  .punkt7 {
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 12px;
+    width: 15px;
+    top: 307px;
+    left: 1209px;
+  }
+
+  #tooltip7 {
+    width: 200px;
+    height: 230px;
+    border-radius: 25px;
+    border-width: 1px;
+    top: 320px;
+    left: 982px;
+  }
+
+}
